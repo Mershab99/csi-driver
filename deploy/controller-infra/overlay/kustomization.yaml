@@ -1,0 +1,8 @@
+bases:
+  - ../base
+namespace: default
+resources:
+  - ../../infra-cluster-service-account.yaml
+  - ../../infra-namespace-configmap.yaml
+#patchesStrategicMerge:
+#  - controller.yaml

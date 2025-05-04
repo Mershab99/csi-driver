@@ -1,0 +1,8 @@
+bases:
+  - ../base
+namespace: default
+resources:
+  - ../../infra-namespace-configmap.yaml
+patchesStrategicMerge:
+  - node.yaml
+  - storageclass.yaml
