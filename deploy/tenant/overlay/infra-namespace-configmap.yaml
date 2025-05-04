@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: driver-config
+  namespace: default
+  labels:
+    app: kubevirt-csi-driver
+data:
+  infraClusterNamespace: default
+    #infraClusterLabels: csi-driver/cluster=tenant

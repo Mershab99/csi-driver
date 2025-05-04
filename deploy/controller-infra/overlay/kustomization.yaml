@@ -1,8 +1,7 @@
-bases:
-  - ../base
 namespace: default
 resources:
-  - ../../infra-cluster-service-account.yaml
-  - ../../infra-namespace-configmap.yaml
-#patchesStrategicMerge:
-#  - controller.yaml
+- infra-cluster-service-account.yaml
+- infra-namespace-configmap.yaml
+- ../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization

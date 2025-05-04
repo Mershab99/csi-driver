@@ -1,8 +1,8 @@
-bases:
-  - ../base
 namespace: default
 resources:
-  - ../../infra-namespace-configmap.yaml
-patchesStrategicMerge:
-  - node.yaml
-  - storageclass.yaml
+- infra-namespace-configmap.yaml
+- ../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patches:
+- path: storageclass.yaml
