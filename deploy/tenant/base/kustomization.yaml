@@ -2,3 +2,6 @@ commonLabels:
   app: kubevirt-csi-driver
 resources:
 - deploy.yaml
+- snapshot.storage.k8s.io_volumesnapshotclasses.yaml
+- snapshot.storage.k8s.io_volumesnapshotcontents.yaml
+- snapshot.storage.k8s.io_volumesnapshots.yaml
