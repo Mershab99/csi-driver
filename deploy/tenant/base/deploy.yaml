@@ -300,15 +300,15 @@ spec:
         - name: udev
           hostPath:
             path: /run/udev
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: driver-config
-  namespace: kubevirt-csi-driver
-data:
-  infraClusterNamespace: 
-  infraClusterLabels: csi-driver/cluster=tenant
+#---
+#apiVersion: v1
+#kind: ConfigMap
+#metadata:
+#  name: driver-config
+#  namespace: kubevirt-csi-driver
+#data:
+#  infraClusterNamespace: 
+#  infraClusterLabels: csi-driver/cluster=tenant
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
